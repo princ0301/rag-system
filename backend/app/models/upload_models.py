@@ -5,11 +5,10 @@ class UploadResponse(BaseModel):
     success: bool
     filename: str
     chunks_created: int
-    collections: str
+    collection: str
     message: str
 
 class UploadRequest(BaseModel):
     mode: str
     session_id: Optional[str] = None
     incognito: bool = False
-    
